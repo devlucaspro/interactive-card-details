@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  
+  <section id="left">
+    <div id="card1">
+      <img src="./images/card-logo.svg" alt="card-logo">
+      <h3 id="numeroDetails">0000 0000 0000 0000</h3>
+      <div class="card-details">
+        <p id="customName">Lucas Ribeiro</p>
+        <p id="customDate">
+          <span id="customMonth">00</span>/<span id="customYear">00</span>
+        </p>
+      </div>
+    </div>
+    <div id="card2">
+      <p id="customCvc" class="customNmr">000</p>
+    </div>
+  </section>
+
+  <section id="right">
+    <form id="form">
+
+      <label class="my-elements" for="name">Cardholder name</label>
+      <input class="inputValid my-elements" id="name" type="text" placeholder="e.g. Lucas Ribeiro">
+      <span id="msg1" class="my-elements"></span>
+
+      <label class="my-elements" for="number">Card number</label>
+      <input class="inputValid my-elements" id="number" type="text" oninput="formatCardNumber(this)" placeholder="e.g. 1234 5678 9123 0000">
+      <span id="msg2" class="my-elements"></span>
+
+      <div id="flexdate" class="my-elements">
+        <div id="date">
+          <label for="month">Exp. date (mm/yy)</label>
+          <div class="date-flex">
+
+            <div class="flexDiv">
+              <input class="inputValid" type="number" id="month" placeholder="MM">
+              <span id="msg3"></span>
+            </div>
+
+            <div class="flexDiv">
+              <input class="inputValid" type="number" id="year" placeholder="YY">
+              <span id="msg4"></span>
+            </div>
+          </div>
+        </div>
+        <div id="cvc">
+          <label for="cvc">Cvc</label>
+          <input class="inputValid" type="number" id="inputCvc" placeholder="e.g. 123">
+          <span id="msg5"></span>
+        </div>
+      </div>
+
+      <button id="btn" type="button" onclick="validarForm(this)">Confirm</button>
+      
+    </form>
+  </section>
+
+</body>
+</html>
