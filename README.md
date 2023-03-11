@@ -33,8 +33,9 @@ You can see this one, it's my solution and i liked to make it.👋
 
 ### Links ☕
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-card-details-application-g1ZFPNjy9D](https://www.frontendmentor.io/solutions/interactive-card-details-application-g1ZFPNjy9D)
+- Repository link: [https://github.com/devlucaspro/interactive-card-details](https://github.com/devlucaspro/interactive-card-details)
+- Live Site URL: [https://card-details-devlucas.netlify.app/](https://card-details-devlucas.netlify.app/)
 
 ## My process 🔥
 
